@@ -13,7 +13,7 @@ class App extends Component {
     }
     this.handleTagInput = this.handleTagInput.bind(this);
     this.handleTagRemove = this.handleTagRemove.bind(this);
-    this.handleTagClear = this.handleTagClear.bind(this);
+    this.handleTagsClear = this.handleTagsClear.bind(this);
   }
   handleTagInput(tag) {
     this.setState({ tags: [...this.state.tags, tag]});
@@ -21,7 +21,8 @@ class App extends Component {
   handleTagRemove(tag) {
     this.setState({ tags: [...this.state.tags.filter(t => t !== tag)]});
   }
-  handleTagClear() {
+  handleTagsClear() {
+    console.log('cleared!')
     this.setState({ tags: []});
   }
   render() {
@@ -34,7 +35,8 @@ class App extends Component {
         </p>
 
         <TagsInput
-          onClear={this.handleTagClear}
+          enableClearAll={true}
+          onClear={this.handleTagsClear}
           onTagRemove={this.handleTagRemove}
           onTagInput={this.handleTagInput} />
 
