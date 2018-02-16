@@ -22,7 +22,6 @@ class App extends Component {
     this.setState({ tags: [...this.state.tags.filter(t => t !== tag)]});
   }
   handleTagsClear() {
-    console.log('cleared!')
     this.setState({ tags: []});
   }
   render() {
@@ -35,7 +34,6 @@ class App extends Component {
         </p>
 
         <TagsInput
-          enableClearAll={true}
           onClear={this.handleTagsClear}
           onTagRemove={this.handleTagRemove}
           onTagInput={this.handleTagInput} />
