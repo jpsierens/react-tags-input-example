@@ -1,6 +1,6 @@
-# react-tags-input example
+# reason-tags-input example
 
-> An example to showcase the use of react-tags-input
+> An example to showcase the use of reason-tags-input
 
 ## Run it
 ```npm install```
