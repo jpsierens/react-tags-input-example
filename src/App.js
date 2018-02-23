@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 // import the react component
-import TagsInput from 'react-tags-input';
+import TagsInput from 'reason-tags-input';
 import './App.css';
 // optionally, import the default styles.
-import 'react-tags-input/build/styles.css';
+import 'reason-tags-input/build/styles.css';
 
 class App extends Component {
   constructor(props) {
